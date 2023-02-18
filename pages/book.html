@@ -1,0 +1,109 @@
+<!--booking for salon-->
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/booking-form.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?
+        family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="book.html">BOOK AN APPOINTMENT</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="../images/menu.png" id="menu">
+    </div>
+
+    <!-- this is the booking form section -->
+    <section id="booking">
+    <div class="title-text">
+        <p>Book Here</p>
+        <h1>We provide the best service for our clients</h1>
+    </div>
+
+    <div class="container">
+        <h1 class="form-title">Book Here</h1>
+        <form action="#">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                <label for="fullName">Full Name</label>
+                <input type="text"
+                       id="fullName"
+                       name="fullName"
+                       placeholder="Enter Full Name"/>
+            </div>
+        </div>
+            <div class="user-input-box">
+                <label for="username">Full Username</label>
+                <input type="text"
+                       id="username"
+                       name="username"
+                       placeholder="Enter Username"/>
+            </div>
+            <div class="user-input-box">
+                <label for="email">Email</label>
+                <input type="text"
+                       id="email"
+                       name="email"
+                       placeholder="Enter Email"/>
+            </div>
+            <div class="user-input-box">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text"
+                       id="phoneNumber"
+                       name="phoneNumber"
+                       placeholder="Enter Phone Number"/>
+            </div>
+            <div class="user-input-box">
+                <label for="password">Date of Appointment</label>
+                <input type="text"
+                       id="password"
+                       name="password"
+                       placeholder="Enter Password"/>
+            </div>
+            <div class="user-input-box">
+                <label for="confirmPassword">Confirm Date of Appointment</label>
+                <input type="text"
+                       id="confirmPassword"
+                       name="confirmPassword"
+                       placeholder="Confirm Password"/>
+            </div>
+
+        <div class="form-submit-btn">
+            <input type="submit" value="Register">
+        </div>
+        </form>
+    </div>  
+</section>  
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+     
+        sideNav.style.right = "-250px";
+     
+        menuBtn.onclick = function(){
+             if(sideNav.style.right == "-250px"){
+                 sideNav.style.right = "0";
+                 menu.src = "../images/close.png";
+             } 
+             else{
+                 sideNav.style.right = "-250px";
+                 menu.src = "../images/menu.png";
+             }
+         }
+     </script>
+     
+     </body>
+     </html>
