@@ -1,0 +1,61 @@
+
+<!--reviews for salon-->
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reviews</title>
+        <link rel="stylesheet" href="../css/review.css">
+        <link href="https://fonts.googleapis.com/css? family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/services.html">SERVICES</a></li>
+            <li><a href="../pages/book.html">BOOK AN APPOINTMENT</a></li>
+            <li><a href="../pages/reviews.html">REVIEWS</a></li>
+            <li><a href="../pages/add.html">LEAVE A REVIEW</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="../images/menu.png" id="menu">
+    </div>
+
+<div class="container">
+    <div class="review">
+        <div class="text-container">
+            <div class="review-text">
+                <p>My daughter has curly hair and struggles finding great salons. We went to Lulu and got fantastic results!</p>
+                <span>ANA</span>
+            </div>
+            <div class="review-text active-text">
+                    <p>Love this salon. Since moving to reading I haven't found a stylist that can style my hair and make it last.
+                       Until I found Lulus hair salon.</p>
+                    <span>MARIANA</span>
+            </div>
+                    <div class="review-text">
+                        <p>Since I have started going there last year my hair has grown so much...
+                           she uses the best products. I'm always please when she does my hair!</p>
+                        <span>KORY</span>
+                    </div>
+        </div>
+    <div class="pic-container">
+        <img src="../images/img-1.jpg" class="review-pic" onclick="showReview(this)">
+        <img src="../images/img-2.jpg" class="review-pic active-pic" onclick="showReview(this)">
+        <img src="../images/img-3.jpg" class="review-pic" onclick="showReview(this)">
+    </div>
+    </div>
+
+</div>
+
+<script src="../js/reviews.js"> 
+</script>
+ 
+</body>
+</html>
